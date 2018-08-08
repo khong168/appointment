@@ -10,33 +10,36 @@
   <body>
     <div class="container">
     <h1>Appointment</h1>
-    <form id="name">
+    <form id="appointmentInput">
       <div class="form-group">
         <label for="name">Name:</label>
         <input id="nameInput" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Enter</button>
-    </form>
-      <div id="outputName">
-      </div>
-    <form id="description">
+
       <div class="form-group">
         <label for="description">Appointment Description:</label>
         <input id="descriptionInput" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">Enter</button>
-    </form>
-      <div id="outputDescription">
-      </div>
-      </div>
-    <form id="time">
+
       <div class="form-group">
-        <label for="time">Name:</label>
+        <label for="date">Date:</label>
+        <input id="dateInput" class="form-control" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time:</label>
         <input id="timeInput" class="form-control" type="text">
+
       </div>
-      <button type="submit" class="btn">Enter</button>
+      <button type="submit" class="btn">Make Appointment</button>
     </form>
-      <div id="outputTime">
+    <div class="story">
+      <p>Thank you <span class="name"></span> for making an appoinment at <span class="time"></span> on the date <span class="date"></span> for your <span class="description"></span> appointment.</p>
+
+    </div>
+
+    </div>
       </div>
+    </div>
   </body>
 </html>

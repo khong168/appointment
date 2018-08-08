@@ -1,31 +1,21 @@
 $(document).ready(function() {
-  $("form#name").submit(function(event) {
+  $("#appointmentInput").submit(function(event) {
     event.preventDefault();
-    var name = $("#name").val();
-    $("#name").text;
-  });
-});
+    var name = $("#nameInput").val();
 
-$(document).ready(function() {
-  $("form#description").submit(function(event) {
-    event.preventDefault();
-    var name = $("#description").val();
-    $("#description").text;
-  });
-});
+    var description = $("#descriptionInput").val();
 
-$(document).ready(function() {
-  $("form#date").submit(function(event) {
-    event.preventDefault();
-    var name = $("#date").val();
-    $("#date").text;
-  });
-});
+    var date = $("#dateInput").val();
 
-$(document).ready(function() {
-  $("form#time").submit(function(event) {
-    event.preventDefault();
-    var name = $("#time").val();
-    $("#time").text;
+    var time = $("#timeInput").val();
+
+
+    $(".time").append(time);
+    $(".date").append(date);
+    $(".description").append(description);
+    $(".name").append(name);
+
+    $(".story").show();
+
   });
 });
